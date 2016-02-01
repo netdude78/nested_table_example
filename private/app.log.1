@@ -1,0 +1,7 @@
+2016-02-01 15:14:44,215 db.py:166 after_update_dbfile(): this_file_id: 3, parent_id: 2
+2016-02-01 15:14:44,216 db.py:170 after_update_dbfile(): parent changed for id: 3, new parent: 2, rowset: dbfile.id,dbfile.file_name,dbfile.file_type,dbfile.file_size,dbfile.file_owner,dbfile.file_parent,dbfile.file_children
+1,/,<NULL>,<NULL>,<NULL>,<NULL>,|2|3|4|
+
+2016-02-01 15:14:44,216 db.py:173 after_update_dbfile(): parent id: 1 children before update: <Row {'file_owner': None, 'file_children': [2L, 3L, 4L], 'dbfile': <Set (dbfile.file_parent = 1)>, 'file_type': None, 'file_name': '/', 'file_size': None, 'file_parent': None, 'id': 1L}>
+2016-02-01 15:14:44,216 db.py:176 after_update_dbfile(): parent id: 1 children after update: [2L, 4L]
+2016-02-01 15:14:44,216 db.py:179 after_update_dbfile(): updating new parent

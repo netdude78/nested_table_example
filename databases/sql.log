@@ -1,0 +1,24 @@
+timestamp: 2016-02-01T15:00:58.769728
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    username CHAR(128),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
+success!
+timestamp: 2016-02-01T15:00:58.772491
+CREATE TABLE dbfile(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    file_name CHAR(512),
+    file_type CHAR(512),
+    file_size INTEGER,
+    file_owner INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  ,
+    file_parent INTEGER REFERENCES dbfile (id) ON DELETE CASCADE  ,
+    file_children TEXT
+);
+success!

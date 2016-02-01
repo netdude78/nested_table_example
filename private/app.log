@@ -1,0 +1,3 @@
+2016-02-01 15:14:44,217 db.py:181 after_update_dbfile(): parent row: <Row {'file_owner': None, 'file_children': [10L], 'file_name': 'Documents', 'file_type': None, 'file_size': None, 'file_parent': 1L, 'id': 2L}>
+2016-02-01 15:14:44,218 db.py:185 after_update_dbfile(): children before update: [10L]
+2016-02-01 15:14:44,218 db.py:187 after_update_dbfile(): children after update: [10L, 3]
